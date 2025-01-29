@@ -1,9 +1,12 @@
-import './style.css';
+// import './style.css';
+import styles from './counter.module.css';
 
 export const initializeCounter = (doc = globalThis.document) => {
   const countElement = doc.getElementById('count');
   const incrementButton = doc.getElementById('increment');
   const decrementButton = doc.getElementById('decrement');
+
+  countElement.classList.add(styles.count);
 
   let count = 0;
 
@@ -13,8 +16,8 @@ export const initializeCounter = (doc = globalThis.document) => {
     if (count < 0) {
       import('./banner.js').then(({ addBanner }) => {
         addBanner('Count is negative!');
-      })
-    } 
+      });
+    }
   };
 
   const increment = () => {
