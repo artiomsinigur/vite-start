@@ -1,0 +1,23 @@
+{
+  "extends": ["stylelint-config-standard"],
+  "plugins": ["stylelint-order"],
+  "rules": {
+    "order/properties-order": [
+      {
+        "emptyLineBefore": "always",
+        "properties": [
+          "position",
+          "display",
+          "width",
+          "height",
+          "margin",
+          "padding",
+          "border",
+          "background",
+          "color",
+          "font"
+        ]
+      }
+    ]
+  }
+}
