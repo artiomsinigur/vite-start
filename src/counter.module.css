@@ -1,3 +1,7 @@
 .count {
   font-size: 5rem;
+
+  &:hover {
+    color: red;
+  }
 }
