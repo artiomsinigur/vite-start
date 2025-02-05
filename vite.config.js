@@ -6,4 +6,7 @@ export default defineConfig({
       map: true,
     },
   },
+  build: {
+    assetsDir: 'assets-static', // Custom Output Directory. Default is <<assets>>
+  },
 });

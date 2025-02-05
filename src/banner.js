@@ -1,6 +1,6 @@
 import styles from './banner.module.css';
 
-const bannerElement = document.querySelector('#content') as HTMLDivElement;
+const bannerElement = document.querySelector('#content');
 bannerElement.classList.add(styles.banner);
 
 export const addBanner = (text = 'Look at this banner!') => {
