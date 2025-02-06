@@ -2,7 +2,9 @@
 
 // import image from './android-chrome-512x512.png';
 // import image from './favicon-16x16.png';
-import bigImage from './images/steve-after-a-workshop.jpg?w=300&format=webp';
+import bigImage from './images/steve-after-a-workshop.jpg?w=300&format=webp&as=metadata';
+
+console.log(import.meta.env); // Special object that contains the environment variables
 
 const imageElm = document.createElement('img');
 imageElm.src = bigImage;

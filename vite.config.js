@@ -12,6 +12,7 @@ export default defineConfig({
     assetsInlineLimit: 8192, // 8 KB (default) or 0 for always outputs separate files
   },
   plugins: [
+    // https://github.com/JonasKruckenberg/imagetools/blob/main/docs/directives.md#blur
     imagetools({
       force: true,
       name: '[name]-[hash][extname]',
